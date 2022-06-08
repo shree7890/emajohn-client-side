@@ -6,7 +6,7 @@ const useCart = () => {
   useEffect(() => {
     const saveCart = getStoredCart();
     const keys = Object.keys(saveCart);
-    fetch("http://localhost:5000/products/keys", {
+    fetch("https://murmuring-citadel-05940.herokuapp.com/products/keys", {
       method: "POST",
       headers: {
         "content-type": "application/json",

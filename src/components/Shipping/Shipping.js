@@ -12,7 +12,7 @@ const Shipping = () => {
   const onSubmit = (data) => {
     const saveCart = getStoredCart();
     data.order = saveCart;
-    fetch("http://localhost:5000/orders", {
+    fetch("https://murmuring-citadel-05940.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",
