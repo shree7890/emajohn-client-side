@@ -6,7 +6,6 @@ import useCart from "../../CustomHooks/useCart";
 import { addToDb } from "../fakedb/data";
 import Product from "../Product/Product";
 import "./Shop.css";
-import Commit from "../Commit/Commit";
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useCart();
@@ -93,7 +92,6 @@ const Shop = () => {
             </Cart>
           </Col>
         </Row>
-        <Commit></Commit>
       </Container>
     </div>
   );
