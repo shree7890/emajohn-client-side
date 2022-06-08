@@ -1,0 +1,42 @@
+.logo img {
+  width: 130px;
+  cursor: pointer;
+}
+.menu a {
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+.navbar-nav a {
+  font-size: 22px;
+  margin-right: 23px;
+}
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.number {
+  height: 34px;
+  width: 34px;
+  background-color: green;
+  position: absolute;
+  right: -31px;
+  top: -18px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 50%;
+  color: white;
+}
+.element {
+  font-size: 20px;
+}
+.user {
+  font-size: 20px;
+  margin-right: 14px;
+  margin-top: 2px;
+  color: #eb8e7e;
+}

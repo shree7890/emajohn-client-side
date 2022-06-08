@@ -1,0 +1,9 @@
+.selected {
+  background-color: tomato !important;
+  color: #fff !important;
+}
+.pagination Button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 18px;
+}

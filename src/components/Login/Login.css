@@ -1,0 +1,20 @@
+.error {
+  color: red;
+}
+
+.googlebutton,
+.twitter {
+  display: block;
+  margin: 20px auto;
+}
+.submit {
+  margin-bottom: 20px;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+}
+.input-field {
+  width: 320px;
+}
