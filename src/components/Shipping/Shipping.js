@@ -1,17 +1,16 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 import useAuth from "../../CustomHooks/useAuth";
 import useCart from "../../CustomHooks/useCart";
 import { clearTheCart, getStoredCart } from "../fakedb/data";
 const Shipping = () => {
   const { currentUser } = useAuth();
   const [cart, setCart] = useCart();
-  const navigate = useNavigate();
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     const saveCart = getStoredCart();
     data.order = saveCart;
+    data.date = new Date().toLocaleDateString();
     fetch("https://murmuring-citadel-05940.herokuapp.com/orders", {
       method: "POST",
       headers: {
@@ -26,7 +25,6 @@ const Shipping = () => {
           reset();
           setCart([]);
           clearTheCart();
-          navigate("/placeorder");
         }
         // console.log(product);
       });

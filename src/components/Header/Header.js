@@ -35,6 +35,7 @@ const Header = () => {
             <NavLink to="/">Shop</NavLink>
             <NavLink to="/order-review">Order review</NavLink>
             <NavLink to="/inventory">Manage Inventory</NavLink>
+            {currentUser?.email && <NavLink to="/orders">Orders</NavLink>}
             <span className="user">{currentUser.displayName}</span>
             {currentUser.displayName ? (
               <button onClick={handleLogOut}>Log Out</button>

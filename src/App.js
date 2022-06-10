@@ -5,6 +5,7 @@ import Inventory from "./components/Inventory/Inventory";
 import Login from "./components/Login/Login";
 import Notfound from "./components/Notfound/Notfound";
 import Order from "./components/Order/Order";
+import Orders from "./components/Orders/Orders";
 import Placeorder from "./components/Placeorder/Placeorder";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Register from "./components/Register/Register";
@@ -35,6 +36,14 @@ function App() {
             element={
               <PrivateRoute>
                 <Shipping />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/orders"
+            element={
+              <PrivateRoute>
+                <Orders />
               </PrivateRoute>
             }
           />
